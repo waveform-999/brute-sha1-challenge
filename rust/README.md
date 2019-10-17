@@ -30,6 +30,8 @@ cargo build
 
 ```shell
 ../target/debug/brute-sha1-challenge-rust --length 4 --sha1 5b11c3fa491d6b03e9742693ca34610c516031b8
+
+../target/debug/brute-sha1-challenge-rust --length 6 --sha1 5268a98b3d8cfa91f0c2731dc9b817715fc810c3
 ```
 
 ### Output
@@ -37,6 +39,9 @@ cargo build
 ```shell
 Success! string = klmn, hash = 5b11c3fa491d6b03e9742693ca34610c516031b8
 1.87s
+
+Success! string = cultrs, hash = 5268a98b3d8cfa91f0c2731dc9b817715fc810c3
+267.67s
 ```
 
 # TODO
