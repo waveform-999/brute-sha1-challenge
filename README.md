@@ -7,3 +7,4 @@ This exercise demonstrates brute forcing a hash in different languages to see wh
 2. rust
 3. javascript (node)
 4. c# (.net core)
+5. CSS            <----  🤯 😂
