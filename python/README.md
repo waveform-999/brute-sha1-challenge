@@ -16,12 +16,12 @@ python3 brute-sha1.py <sha1> <length>
 ### Example
 
 ```shell
-python3 brute-sha1.py eda91b38e63bc56017dc77a054a540f635c63f31 6
+python3 brute-sha1.py 5b11c3fa491d6b03e9742693ca34610c516031b8 4
 ```
 
 ### Output
 
 ```shell
-Success! string = curtis, hash = eda91b38e63bc56017dc77a054a540f635c63f31
-58.61461091041565
+Success! string = klmn, hash = 5b11c3fa491d6b03e9742693ca34610c516031b8
+0.24553489685058594
 ```
