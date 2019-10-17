@@ -23,4 +23,4 @@ start = time.time()
 bruteforce(args.sha1, args.length)
 end = time.time()
 
-print(end - start)
+print(end - start, "s")

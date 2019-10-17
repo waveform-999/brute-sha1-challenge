@@ -6,6 +6,18 @@
 https://www.rust-lang.org/tools/install
 ```
 
+If you're getting permission denied errors, try
+
+```shell
+curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path 
+```
+
+Then manually update your shell profile (.bash_profile or .zshrc) to include to your path
+
+```shell
+source ~/.cargo/env
+```
+
 ## Compile
 
 ```shell
