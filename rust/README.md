@@ -26,3 +26,10 @@ cargo build
 Success! string = klmn, hash = 5b11c3fa491d6b03e9742693ca34610c516031b8
 1.87s
 ```
+
+# TODO
+
+Explore concurrency / threads / num_cpus
+
+* https://doc.rust-lang.org/book/ch16-00-concurrency.html
+* https://docs.rs/num_cpus/1.10.1/num_cpus/
