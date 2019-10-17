@@ -1,0 +1,30 @@
+@use css_next:cryptography
+@use css_next:iteration_tools
+@use css_next:performance
+
+@function bruteforce($hash_string, $length) {  
+    $chars: 'abcdefghiklmnopqrstuvwxyz';
+    $length: 6;
+    $hash-algo: 'sha1';
+
+    $time-start: performance.start();
+
+    $result: '';
+    @each $pwd in iteration_tools.cartesian_product($chars, repeat=$length) {
+        $result = $result + $pwd;
+        $hashed = cryptography.compute_hash($hash-algo, $result).to_hex_string();
+        @if $hashed == $hash_string {
+            $time-taken: $time-start - performance.stop();
+            @debug($result, $hash_string);
+            @debug('time taken: ', $time-taken);
+            @return $result + ' ' + $hash_string + ' ' + $time-taken;
+        }
+    }
+}
+
+#answer {
+    &:after,
+    &::after {
+        content: bruteforce(attr(data-hash-string), attr(data-length));
+    }
+}
